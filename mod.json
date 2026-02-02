@@ -1,0 +1,17 @@
+{
+	"geode": "4.10.2",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "dbomba2.startpos-finder",
+	"name": "StartPos Finder",
+	"version": "v1.1.1",
+	"developer": "dbomba2",
+	"description": "Find startpos versions of any rated level faster than ever!",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	}
+}
