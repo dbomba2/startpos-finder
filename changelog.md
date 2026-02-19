@@ -1,3 +1,24 @@
+# 1.3.0
+
+
+
+* ported to Geode 5.0.0-beta.3
+* now compatible with Geometry Dash 2.2081
+
+
+
+
+# 1.2.0
+
+
+
+* my levels navigation: Hold `Shift` while clicking the search button to instantly jump to your **My Levels** folder.
+* added a return button inside the `EditLevelLayer`. Now you can easily switch back to the original online level from your local copies.
+* fixed button positioningThe search button now correctly appears on unverified and custom levels where it was previously hidden.
+
+
+
+
 # 1.1.1
 
 
