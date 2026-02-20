@@ -5,7 +5,7 @@
   },
   "id": "dbomba2.startpos-finder",
   "name": "StartPos Finder",
-  "version": "v1.3.0",
+  "version": "v1.3.1",
   "developer": "dbomba2",
   "description": "Find StartPos copies. Hold Shift while clicking the button to find a local copy."
 }

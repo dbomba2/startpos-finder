@@ -160,14 +160,14 @@ class $modify(StartPosFinderEdit, EditLevelLayer) {
             if (!spr) return true;
 
             spr->setColor({ 255, 150, 0 });
-            spr->setScale(0.6f);
+            spr->setScale(0.7f);
 
             auto btn = CCMenuItemSpriteExtra::create(
                 spr, this, menu_selector(StartPosFinderEdit::onBackToOriginal)
             );
 
             auto menu = CCMenu::create();
-            menu->setPosition({ 45.f, winSize.height - 90.f });
+            menu->setPosition({winSize.width / 2.0f - 185.0f, winSize.height / 2.0f - 23.f });
             menu->addChild(btn);
 
             this->addChild(menu, 9999);

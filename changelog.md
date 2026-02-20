@@ -1,3 +1,12 @@
+# 1.3.1
+
+
+
+* fixed the position of the button in the **My Levels** tab because it was annoyingly high to reach comfortably.
+
+
+
+
 # 1.3.0
 
 
