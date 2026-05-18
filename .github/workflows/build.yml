@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
-    uses: geode-sdk/build-geode-mod/.github/workflows/main.yml@main
+    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
     with:
       combine: true
+      build-config: "Release"
