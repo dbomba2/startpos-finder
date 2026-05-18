@@ -1,9 +1,9 @@
 {
 "geode": "5.0.0-beta.3",
     "gd": {
-    "win": "2.208",
-    "mac": "2.208",
-    "android": "2.208"
+    "win": "2.2074",
+    "mac": "2.2074",
+    "android": "2.2074"
   },
   "id": "dbomba2.startpos-finder",
   "name": "StartPos Finder",
