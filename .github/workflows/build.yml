@@ -14,14 +14,16 @@ jobs:
         config:
         - name: Windows
           os: windows-latest
+          target: win
         - name: macOS
           os: macos-latest
+          target: mac
         - name: Android32
           os: ubuntu-latest
-          target: Android32
+          target: android32
         - name: Android64
           os: ubuntu-latest
-          target: Android64
+          target: android64
 
     name: Build ${{ matrix.config.name }}
     runs-on: ${{ matrix.config.os }}
@@ -34,4 +36,5 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           combine: true
-          target: ${{ matrix.config.target || matrix.config.name }}
+          target: ${{ matrix.config.target }}
+          build-config: Release
