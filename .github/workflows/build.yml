@@ -8,6 +8,6 @@ on:
 
 jobs:
   build:
-    uses: geode-sdk/build-geode-mod@main
+    uses: geode-sdk/build-geode-mod/.github/workflows/build.yml@main
     with:
       combine: true
