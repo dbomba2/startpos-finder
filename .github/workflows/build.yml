@@ -1,0 +1,13 @@
+name: Build Geode Mod
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    uses: geode-sdk/build-geode-mod@main
+    with:
+      combine: true
