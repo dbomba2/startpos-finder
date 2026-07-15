@@ -1,3 +1,15 @@
+# 1.4.3
+
+
+
+* added independent position settings for the StartPos button on the level info screen and the return button in **My Levels**.
+* added a set of curated button placements designed around the existing Geometry Dash interface.
+* preserved the vanilla play button by attaching the StartPos button to the existing play-button menu instead of creating another top-level menu.
+* improved compatibility with other UI mods, including **Node IDs** and **Death Tracker**.
+* updated the mod for Geode 5.8.2 and the current platform-specific manifest format.
+
+
+
 # 1.3.1
 
 

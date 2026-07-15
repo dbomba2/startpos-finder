@@ -1,13 +1,59 @@
 {
-"geode": "5.0.0-beta.3",
-    "gd": {
-    "win": "2.2081",
-    "mac": "2.2081",
-    "android": "2.2081"
+  "geode": "5.8.2",
+  "gd": {
+    "win": "*",
+    "mac": "*",
+    "android": "*",
+    "ios": "*"
   },
   "id": "dbomba2.startpos-finder",
   "name": "StartPos Finder",
-  "version": "v1.3.2",
+  "version": "v1.4.3",
   "developer": "dbomba2",
-  "description": "Find StartPos copies. Hold Shift while clicking the button to find a local copy."
+  "description": "Find StartPos copies. Hold Shift while clicking the button to find a local copy.",
+  "settings": {
+    "level-info-position": {
+      "type": "string",
+      "name": "Level info button position",
+      "description": "Position of the cyan/orange StartPos button on the level info screen.",
+      "default": "Auto",
+      "one-of": [
+        "Auto",
+        "Left Top",
+        "Left Middle",
+        "Left Bottom",
+        "Difficulty Upper",
+        "Right of Difficulty",
+        "Difficulty Lower",
+        "Stats Upper",
+        "Stats Lower",
+        "Above Arrows",
+        "Bottom Right"
+      ]
+    },
+    "edit-level-position": {
+      "type": "string",
+      "name": "My Levels return button position",
+      "description": "Position of the orange return button on EditLevelLayer. Auto preserves the existing placement.",
+      "default": "Auto",
+      "one-of": [
+        "Auto",
+        "Top Left",
+        "Top Inner Left",
+        "Top Inner Right",
+        "Top Right",
+        "Middle Left",
+        "Middle Inner Left",
+        "Middle Inner Right",
+        "Middle Right",
+        "Bottom Left",
+        "Bottom Inner Left",
+        "Bottom Inner Right",
+        "Bottom Right"
+      ]
+    }
+  },
+  "dependencies": {
+    "geode.node-ids": ">=v1.22.0"
+  }
 }
