@@ -8,7 +8,7 @@
   },
   "id": "dbomba2.startpos-finder",
   "name": "StartPos Finder",
-  "version": "v1.4.3",
+  "version": "v1.4.4",
   "developer": "dbomba2",
   "description": "Find StartPos copies. Hold Shift while clicking the button to find a local copy.",
   "settings": {
@@ -24,6 +24,7 @@
         "Left Bottom",
         "Difficulty Upper",
         "Right of Difficulty",
+        "Right Side of Play Button",
         "Difficulty Lower",
         "Stats Upper",
         "Stats Lower",

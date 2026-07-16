@@ -233,6 +233,28 @@ namespace {
             return automaticPosition;
         }
 
+        // Place the button immediately to the right of the vanilla play button.
+        // m_playSprite is used as the visual reference, so the placement follows
+        // the actual play-button position and scale on different resolutions.
+        if (configured == "Right Side of Play Button") {
+            if (layer->m_playSprite) {
+                auto playRightCenterWorld = layer->m_playSprite->convertToWorldSpace({
+                    layer->m_playSprite->getContentSize().width,
+                    layer->m_playSprite->getContentSize().height * 0.5f,
+                });
+                auto playRightCenter = layer->convertToNodeSpace(playRightCenterWorld);
+                constexpr float kPlayButtonGap = 2.0f;
+
+                return place(
+                    playRightCenter.x + footprint.width * 0.5f + kPlayButtonGap,
+                    playRightCenter.y
+                );
+            }
+
+            log::warn("Unable to find the play sprite; using Auto placement");
+            return automaticPosition;
+        }
+
         // Left edge placements, similar to the marked positions in the report.
         if (configured == "Left Top") {
             return place(rect.left + 55.0f, rect.top - 108.0f);
